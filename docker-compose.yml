@@ -18,7 +18,7 @@ services:
   hoge:
     build: ./php-common
     container_name: php-hoge
-    working_dir: /target/path
+    working_dir: /var/www/html/hoge
     environment:
       - VIRTUAL_HOST=hoge.hoge.com
     volumes:
@@ -35,7 +35,7 @@ services:
   foo:
     build: ./php-common
     container_name: php-foo
-    working_dir: /target/path
+    working_dir: /var/www/html/foo
     environment:
       - VIRTUAL_HOST=foo.foo.com
     volumes:
